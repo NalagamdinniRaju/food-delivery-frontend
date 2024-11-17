@@ -1,0 +1,38 @@
+.food-display {
+    margin-top: 20px;
+}
+.food-display h2 {
+    font-size: max(2w,24px);
+    font-weight: 500;
+}
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 30px;
+}
+
+/* FoodDisplay.css */
+.spinner-container {
+    width: 100%;
+    min-height: 400px; /* or whatever minimum height you want */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    height: 100px;
+    width: 100px;
+    border: 5px solid #bdbdbd;
+    border-top-color: tomato;
+    border-radius: 50%;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
