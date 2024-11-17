@@ -1,11 +1,13 @@
 .navbar {
     padding: 20px 0px;
+    padding-bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo {
-    width: 150px;
+    width: 120px;
+    padding-bottom: 0;
 }
 
 .navbar-menu {
@@ -93,7 +95,7 @@
 
 @media(max-width:1050px){
     .navbar .logo {
-        width: 140px;
+        width: 100px;
     }
     .navbar-menu {
         gap: 20px;
@@ -133,6 +135,9 @@
 
 @media screen and (max-width:750px){
     
+    .navbar .log {
+        width: 70px;
+    }
     .navbar-menu {
        display: none;
     }
