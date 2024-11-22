@@ -16,7 +16,7 @@ const Verify = () => {
         const response = await axios.post(url+"/api/orders/verify", {success,orderId})
         console.log(response)
         if(response.data.success){
-            navigate("/myorders")
+            navigate("/my-orders")
         }
         else{
             navigate("/")
